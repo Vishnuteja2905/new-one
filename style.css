@@ -1,0 +1,143 @@
+/* General styling for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.logoImg {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0px; /* Space between logo and heading */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem; /* Adjust the font size of the header as needed */
+    flex-grow: 1; /* Allow the heading to take up remaining space */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0; /* Ensure no extra margin around the list */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Styling for sections and products */
+section {
+    padding: 20px;
+}
+
+.product, .accessory {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img, .accessory img {
+    width: 200px; /* Set a consistent width */
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery img {
+    width: 100px; /* Consistent width */
+    height: 100px; /* Consistent height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+.contactHead {
+    text-align: center;
+}
+
+
+/* Styling for the contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Optional: set a max-width for better layout */
+    margin: 0 auto; /* Center the form horizontally */
+    gap: 15px; /* Add space between elements */
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set an initial height */
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
